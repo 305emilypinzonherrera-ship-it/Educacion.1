@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroMatemáticas - ¡Tu Viaje a los Planetas Numéricos!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="main-header">
+        <div class="logo-space">
+            <span class="rocket-emoji" aria-hidden="true">🚀</span>
+            <span class="brand-name">AstroMatemáticas</span>
+        </div>
+        
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Menú principal de la nave">
+            <ul class="nav-list">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#misiones" class="nav-link">Planetas Matemáticos</a></li>
+                <li><a href="#quiz-seccion" class="nav-link">Desafío Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        
+        <section class="hero-section" id="inicio" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <span class="hero-badge">🚀 ¡Tripulación lista para despegar!</span>
+                <h1 class="hero-title" id="hero-heading">¡Conquista el Universo con las <span class="text-glow">Matemáticas</span>!</h1>
+                <p class="hero-description">Viaja por planetas mágicos. Aprende a sumar estrellas, restar asteroides y dividir tesoros intergalácticos de forma súper fácil con misiones secretas.</p>
+                <a href="#misiones" class="btn btn-cta">¡Explorar Planetas! 🪐</a>
+            </div>
+        </section>
+
+        <section class="academy-section" id="misiones" aria-labelledby="catalog-heading">
+            <div class="section-header">
+                <h2 class="section-title" id="catalog-heading">Misiones Matemáticas del Espacio</h2>
+                <p class="section-subtitle">Haz clic sobre cualquier planeta para abrir sus videos animados y resolver sus actividades interactivas.</p>
+            </div>
+
+            <div class="courses-grid">
+                
+                <!-- Planeta 1: Sumar -->
+                <article class="course-card" data-category="suma" id="planeta-suma">
+                    <button class="card-accordion-trigger" aria-expanded="false" aria-controls="content-suma" id="btn-suma">
+                        <span class="card-icon" aria-hidden="true">➕</span>
+                        <span class="course-title">Planeta Suma: ¡Juntar Estrellas!</span>
+                        <span class="arrow-indicator" aria-hidden="true">▼</span>
+                    </button>
+                    
+                    <div class="card-hidden-content" id="content-suma" role="region" aria-labelledby="btn-suma">
+                        <div class="course-text-wrapper">
+                            <p class="course-text"><strong>¿Qué es sumar?</strong> Sumar es simplemente meter cosas en una misma mochila espacial. ¡Mira el video explicativo y resuelve la misión del astronauta!</p>
+                            <div class="video-container">
+                                <iframe src="https://youtube.com" title="Video de sumas" allowfullscreen></iframe>
+                            </div>
+                            <div class="activity-box">
+                                <p class="activity-question">⭐ Misión Suma: Si tu cohete recolecta 3 estrellas brillantes y luego encuentra otras 4 estrellas, ¿cuántas estrellas guardaste en total?</p>
+                                <div class="activity-buttons">
+                                    <button type="button" class="btn-activity correct-option">¡7 Estrellas!</button>
+                                    <button type="button" class="btn-activity">5 Estrellas</button>
+                                </div>
+                                <div class="activity-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Planeta 2: Restar -->
+                <article class="course-card" data-category="resta" id="planeta-resta">
+                    <button class="card-accordion-trigger" aria-expanded="false" aria-controls="content-resta" id="btn-resta">
+                        <span class="card-icon" aria-hidden="true">➖</span>
+                        <span class="course-title">Planeta Resta: ¡Esquivar Asteroides!</span>
+                        <span class="arrow-indicator" aria-hidden="true">▼</span>
+                    </button>
+                    
+                    <div class="card-hidden-content" id="content-resta" role="region" aria-labelledby="btn-resta">
+                        <div class="course-text-wrapper">
+                            <p class="course-text"><strong>¿Qué es restar?</strong> Restar es perder, romper o regalar cosas de tu nave espacial. ¡Mira cómo bajan los números en el video educativo!</p>
+                            <div class="video-container">
+                                <iframe src="https://youtube.com" title="Video de restas" allowfullscreen></iframe>
+                            </div>
+                            <div class="activity-box">
+                                <p class="activity-question">☄️ Misión Resta: En tu nave llevas 6 helados espaciales, pero los marcianitos se comen 2. ¿Cuántos helados te quedaron?</p>
+                                <div class="activity-buttons">
+                                    <button type="button" class="btn-activity">3 Helados</button>
+                                    <button type="button" class="btn-activity correct-option">¡4 Helados!</button>
+                                </div>
+                                <div class="activity-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Planeta 3: Dividir -->
+                <article class="course-card" data-category="division" id="planeta-division">
+                    <button class="card-accordion-trigger" aria-expanded="false" aria-controls="content-division" id="btn-division">
+                        <span class="card-icon" aria-hidden="true">➗</span>
+                        <span class="course-title">Planeta División: ¡Repartir Cristales!</span>
+                        <span class="arrow-indicator" aria-hidden="true">▼</span>
+                    </button>
+                    
+                    <div class="card-hidden-content" id="content-division" role="region" aria-labelledby="btn-division">
+                        <div class="course-text-wrapper">
+                            <p class="course-text"><strong>¿Qué es dividir?</strong> Dividir es repartir dulces, cristales o juguetes en partes exactamente iguales para que todos tus amigos alienígenas reciban lo mismo.</p>
+                            <div class="video-container">
+                                <iframe src="https://youtube.com" title="Video de divisiones" allowfullscreen></iframe>
+                            </div>
+                            <div class="activity-box">
+                                <p class="activity-question">💎 Misión División: Tienes 8 cristales de energía y quieres regalárselos en partes iguales a tus 2 robots exploradores. ¿Cuántos cristales recibe cada robot?</p>
+                                <div class="activity-buttons">
+                                    <button type="button" class="btn-activity correct-option">¡4 Cristales!</button>
+                                    <button type="button" class="btn-activity">2 Cristales</button>
+                                </div>
+                                <div class="activity-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Formulario del Mini Quiz Accesible -->
+        <section class="quiz-section" id="quiz-seccion" aria-labelledby="quiz-heading">
+            <div class="quiz-container">
+                <span class="quiz-icon" aria-hidden="true">👾</span>
+                <h2 id="quiz-heading" class="quiz-title">¡Desafío del Guardián Cósmico!</h2>
+                
+                <form id="spaceQuiz" onsubmit="event.preventDefault();">
+                    <fieldset class="quiz-fieldset">
+                        <legend class="quiz-legend">Si tu tripulación tiene 10 galletas de avena y las reparten equitativamente entre 2 astronautas, ¿cuántas galletas le tocan a cada uno para que sea justo?</legend>
+                        
+                        <div class="quiz-options-group">
+                            <div class="radio-option">
+                                <input type="radio" id="opt1" name="space_math" value="incorrecto1">
+                                <label for="opt1">Le tocan 3 galletas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="opt2" name="space_math" value="correcto">
+                                <label for="opt2">¡Le tocan 5 galletas a cada uno!</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="opt3" name="space_math" value="incorrecto2">
+                                <label for="opt3">Le tocan 2 galletas</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <button type="button" class="btn btn-submit" id="submitQuizBtn">Escanear Respuesta Espacial 🛰️</button>
+                </form>
+                
+                <div id="quizFeedback" class="quiz-feedback" role="status" aria-live="polite"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 AstroMatemáticas. Creado de forma accesible para todos los niños de la escuela del futuro.</p>
+        <p style="margin-top: 0.8rem;">
+            <a href="IA.html" style="color: var(--laser-cyan); text-decoration: underline; font-weight: bold;">Consultar Bitácora de Uso de IA</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
